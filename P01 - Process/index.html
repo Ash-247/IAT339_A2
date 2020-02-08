@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - Style Guide Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>P01 - Style Guide Template</h1>
+    </header>
+      <p>A template you can use to start building out your own style guides with.</p>
+
+
+      <nav>
+        <ul>
+          <li><a href="#interactive_elements">Interactive Elements</a></li>
+          <li><a href="#text_elements">Text Elements</a></li>
+          <li><a href="#combined_elements">Combined Elements</a></li>
+          <li><a href="#product_listing">Product Listing Template</a></li>
+          <li><a href="#checkout_template">Checkout Template</a></li>
+          <li><a href="#citations">Citations</a></li>
+        </ul>
+
+      </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h4>Interactive Elements</h4>
+
+
+      <section class="element">
+        <h4>In-text link</h4>
+          <p>Check out our website <a class="intext_link" href="https://www.thejourneytourism.com/">here</a></p>
+
+        <!-- That company I chose is centered around tourism so I found a random tourism consulting website
+            as and example.
+        -->
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h4>Navigation Link</h4>
+
+        <nav>
+          <ul>
+            <li><a href="#interactive_elements">Interactive Elements</a></li>
+          </ul>
+        </nav>
+
+        <h4>CSS selector:</h4>
+        <p>nav li, nav li, nav li a</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;ul&gt;</code>
+        <code>&lt;li&gt;&lt;a href="#"&gt;Default Button&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;/ul&gt;</code>
+
+      </section>
+
+
+      <section class="element">
+        <h4>Submit/Reset Buttons</h4>
+        <input class="input_button" type="submit" value="Check Availability">
+        <input class="input_button" type="reset" value="Clear">
+
+        <h4>CSS selector:</h4>
+        <p>.input_button</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input class="input_button" type="submit/reset" value="Submit/Reset"&gt;</code>
+      </section>
+
+
+      <section class="element">
+        <h4>Text Input Field with Label</h4>
+        <p> Find an Adventure &nbsp; <input class="input_text" type="text"></p>
+
+        <h4>CSS selector:</h4>
+        <p>.input_text</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input class="input_text" type="text" placeholder="Placeholder"&gt;</code>
+      </section>
+
+
+      <section class="element">
+        <h4>Radio Button with Label</h4>
+
+        <div class="radio_container">
+          <label class="radio_container">London
+            <input type="radio" name="radio">&nbsp;
+            <span class="radio_button"></span>
+          </label>
+          <label class="radio_container">Edinburgh
+            <input type="radio" name="radio">&nbsp;
+            <span class="radio_button"></span>
+          </label>
+          <label class="radio_container">York
+            <input type="radio" name="radio">&nbsp;
+            <span class="radio_button"></span>
+          </label>
+
+          <h4>CSS selector:</h4>
+          <p>.radio_container &nbsp; <b>and</b> &nbsp; .radio_button</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;label class="radio_container"&gt; Radio button</code>
+          <code>&nbsp;&lt; input type="radio" name="radio"&gt;</code>
+          <code>&nbsp;&lt; span class="radio_button"&gt;&lt;/span&gt;</code>
+          <code>&lt;/label&gt;</code>
+
+        </div>
+      </section>
+
+
+      <section class="element">
+        <h4>Image as a Link</h4>
+        <a href="https://www.thejourneytourism.com/"><img class="hover_img" src="img/montfort.jpg" alt="People Canoeing on the Ocean"></a>
+        <!-- Uses a fun experience photo as a link to the earlier tourism consulting website.
+        -->
+        <h4>CSS selector:</h4>
+        <p>.hover_img</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="hover_img" src="img/example.jpg" alt="Example Image"&gt;&lt;/a&gt;</code>
+
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h4>Text Elements</h4>
+
+      <section class="element">
+        <h4>Paragraphs</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eu erat vel vehicula.
+          Donec sit amet arcu consectetur, efficitur sapien et, feugiat nisi. Integer euismod a ante venenatis venenatis.
+          Suspendisse mollis odio ut dolor lacinia, a aliquet magna commodo. Donec tortor lacus, ultrices quis erat in, tristique
+          rutrum justo. Integer fermentum, nibh et auctor pulvinar, nisi mauris volutpat turpis, vitae scelerisque eros velit id nisi.
+           Nam a ipsum in eros varius rutrum sit amet sit amet sem. Proin auctor nibh vel convallis blandit.</p>
+           <!-- Lorem Ipsum as example text for the paragraph
+           -->
+      </section>
+
+
+      <section class="element">
+        <h4>Headings</h4>
+        <h2>Title</h2>
+        <h3>Subtitle</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eu erat vel vehicula.
+          Donec sit amet arcu consectetur, efficitur sapien et, feugiat nisi. Integer euismod a ante venenatis venenatis.
+          Suspendisse mollis odio ut dolor lacinia, a aliquet magna commodo. Donec tortor lacus, ultrices quis erat in, tristique
+          rutrum justo. Integer fermentum, nibh et auctor pulvinar, nisi mauris volutpat turpis, vitae scelerisque eros velit id nisi.
+           Nam a ipsum in eros varius rutrum sit amet sit amet sem. Proin auctor nibh vel convallis blandit.</p>
+           <!-- Lorem Ipsum as example text for the paragraph
+           -->
+      </section>
+
+      <section class="element">
+        <h4>Numbered Lists</h4>
+          <ol>
+            <li>Great Accomodation Options</li>
+            <li>Multiple cultural Attractions</li>
+            <li>Excellent Public Transportation System</li>
+          </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h4>Combined Elements</h4>
+
+      <section class="element">
+        <h4>Main Navigation</h4>
+        <nav>
+          <ul>
+            <li><a href="#interactive_elements">Home</a></li>
+            <li><a href=".checkout">Services</a></li>
+            <li><a href="#citations">About</a></li>
+            <li><a href="#combined_elements">Contact</a></li>
+          </ul>
+
+        </nav>
+      </section>
+
+      <section id="product_listing">
+        <h4>Product/Service Listing</h4>
+          <div class="listing_container">
+            <div class="listing">
+              <img src="img/northo.jpg" alt="Fjord in Norway" width="500" height="300">
+              <h4 class="listing_title">Northern Europe</h4>
+              <h4 class="listing_subtitle">Sweden - Norway - Finland - Denmark</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eu erat vel vehicula.
+                Donec sit amet arcu consectetur, efficitur sapien et, feugiat nisi. Integer euismod a ante venenatis venenatis.
+                Suspendisse mollis odio ut dolor lacinia, a aliquet magna commodo. Donec tortor lacus, ultrices quis erat in, tristique
+                rutrum justo. Integer fermentum, nibh et auctor pulvinar, nisi mauris volutpat turpis, vitae scelerisque eros velit id nisi.
+                 Nam a ipsum in eros varius rutrum sit amet sit amet sem. Proin auctor nibh vel convallis blandit.</p>
+                 <input class="input_button listing_button" type="submit" value="Check Availability">
+            </div>
+
+            <div class="listing">
+              <img src="img/uk.jpg" alt="Photo of the coast of Whitby" width="500" height="300">
+              <h4 class="listing_title">United Kingdom</h4>
+              <h4 class="listing_subtitle">England - Scotland - Wales - Northern Ireland</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eu erat vel vehicula.
+                Donec sit amet arcu consectetur, efficitur sapien et, feugiat nisi. Integer euismod a ante venenatis venenatis.
+                Suspendisse mollis odio ut dolor lacinia, a aliquet magna commodo. Donec tortor lacus, ultrices quis erat in, tristique
+                rutrum justo. Integer fermentum, nibh et auctor pulvinar, nisi mauris volutpat turpis, vitae scelerisque eros velit id nisi.
+                 Nam a ipsum in eros varius rutrum sit amet sit amet sem. Proin auctor nibh vel convallis blandit.</p>
+                 <input class="input_button listing_button" type="submit" value="Check Availability">
+            </div>
+
+            <div class="listing">
+              <img src="img/greece.jpg" alt="Clear blue seas in Greece" width="500" height="300">
+              <h4 class="listing_title">The Mediterranean</h4>
+              <h4 class="listing_subtitle">Greece - Italy - Southern France - Spain</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eu erat vel vehicula.
+                Donec sit amet arcu consectetur, efficitur sapien et, feugiat nisi. Integer euismod a ante venenatis venenatis.
+                Suspendisse mollis odio ut dolor lacinia, a aliquet magna commodo. Donec tortor lacus, ultrices quis erat in, tristique
+                rutrum justo. Integer fermentum, nibh et auctor pulvinar, nisi mauris volutpat turpis, vitae scelerisque eros velit id nisi.
+                 Nam a ipsum in eros varius rutrum sit amet sit amet sem. Proin auctor nibh vel convallis blandit.</p>
+                 <input class="input_button listing_button" type="submit" value="Check Availability">
+            </div>
+          </div>
+
+      </section>
+
+      <section id="checkout_template">
+        <h4>Checkout Cart</h4>
+        <div class="row">
+
+          <div class="column_3">
+            <div class="payment_container">
+              <h4>Cart <span class="cart"><b>1</b></span></h4>
+                <p><a href="#" class="intext_link">Northern Europe Package</a> <span class="cart">&nbsp; $2500 CAD</span></p>
+                <hr>
+                <p>GST 5% <span class="cart"> $125</span></p>
+                <hr>
+                <p>Total <span class="cart"> <b>$2625 CAD</b></span></p>
+            </div>
+          </div>
+
+          <div class="column_3">
+            <div class="payment_container">
+              <form action="/action_page.php">
+
+                <div class="row">
+                  <div class="column_2">
+                    <h4>Billing Address</h4>
+                    <label>Full Name</label>
+                    <input type="text" class="input_text" id="first_name" name="firstname" placeholder="John Smith">
+                    <label for="email">E-mail</label>
+                    <input type="text" class="input_text" id="email" name="email" placeholder="johnnyboy@gmail.com">
+                    <label for="address">Address</label>
+                    <input type="text" class="input_text" id="address" name="address" placeholder="122 29th Street">
+                    <label for="city">City</label>
+                    <input type="text" class="input_text" id="city" name="city" placeholder="Toronto">
+
+                    <div class="row">
+                      <div class="column_2">
+                        <label>Province or State</label>
+                        <input type="text" class="input_text" name="province_state" placeholder="Ontario">
+                      </div>
+                      <div class="column_2">
+                        <label>Zip Code</label>
+                        <input type="text" class="input_text" name="zip" placeholder="L9R 2H7">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column_2">
+                    <h4>Payment</h4>
+                    <label>Name on Card</label>
+                    <input type="text" class="input_text" id="creditname" name="credit_name" placeholder="John Jay Smith">
+                    <label>Card Number</label>
+                    <input type="text" class="input_text" id="creditnum" name="credit_number" placeholder="0000 0000 0000 0000">
+                    <label>Expiration Date</label>
+                    <input type="text" class="input_text" id="expdate" name="exp_date" placeholder="05/23">
+
+                    <div class="row">
+                      <div class="column_2">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="input_text" id="cvv" name="cvv" placeholder="111">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <input type="submit" value="Checkout" class="input_button">
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </section>
+
+    <!-- // COMBINED ELEMENTS SECTION -->
+    <section class="element">
+      <h4>What does the company do?</h4>
+      <br>
+      <p>My company offers a more accessible and affordable way to do large journeys. Where most travel companies try to wring the most output
+      of their customers money, my company finds strategies for the customer to travel where they want without killing their budget. Ways to
+      mitigate cost on flights, cheaper accomodations that are enjoyable, and activities you can do to experience your destination has to offer
+      through more than just expensive experience.</p>
+
+      <br><br>
+
+      <h4>What is the company to you?</h4>
+      <br>
+      <p>Older generations had more opportunies to explore the world as they earned a higher on average wage, but not so much for the younger generation.
+      We provide a niche opportunity for millenials and gen z to travel the world on their often restricted budgets. To experience new things without spending
+      an exorbitant amount on unnecessary costs is what provide.</p>
+
+      <br><br>
+
+      <h4>Why should you purchase the company's services?</h4>
+      <br>
+      <p>Rather than limit your options due to budgetary concerns, our experts have devised ways in which to work around restrictions as best as possible
+      to give you the experience you're looking for. No other travel company can boast such a dedication to their customer base as they will choose an
+      option with more fees and services than would be strictly necessary.</p>
+    </section>
+
+    <section class="element">
+      <h4>Branding</h4>
+      <p><b>Title font:</b> Montserrat</p>
+      <h2>This is the Title Font</h2>
+      <p><b>Subtitle font:</b> Roboto</p>
+      <h3>This is the Subtitle Font</h3>
+
+      <p><br><br><b>Colour Palette:</b> I figured following a palette that primarily uses green would be the direction I want to go.</p>
+      <img src="img/palette.png" alt="Colour Palette">
+      <br><br>
+
+      <p><b>Potential Imagery</b></p>
+      <img src="img/island.jpg" alt="Picturesque view of a Mediterranean island" width="1000" height="400"> <br>
+      <img src="img/venice.jpg" alt="Shot of Venice's Canal" width="800" height="534">
+      <img src="img/innsbruck.jpg" alt="Photo of Innsbruck covered in snow" width="800" height="533">
+
+    </section>
+
+
+    <section id="citations">
+      <h4>Citations</h4>
+
+      <ul>
+        <li>Ulanovsky, Julieta. Designer. 2014. <strong>Montserrat [Font]</strong>. Retrieved from <a href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap">https://fonts.googleapis.com/css?family=Montserrat:600&display=swap</a></li>
+        <li>Robertson, Christian. Designer. 2011. <strong>Roboto [Font]</strong>. Retrieved from <a href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap">https://fonts.googleapis.com/css?family=Montserrat:600&display=swap</a></li>
+        <li>St. Paul's Cathedral. nd. <strong>St. Paul's Cathedral [Image]</strong>. Retrieved from <a href="https://www.telegraph.co.uk/goodlife/living/the-best-places-in-the-world-to-retire-in-2016/malta/">https://www.telegraph.co.uk/goodlife/living/the-best-places-in-the-world-to-retire-in-2016/malta/</a></li>
+        <li>Beach in Greece. nd. <strong>Beach in Greece [Image]</strong>. Retrieved from <a href="https://mytravelleader.com/travel/greece-was-just-voted-the-best-cruise-destination-in-the-world-heres-why/">https://mytravelleader.com/travel/greece-was-just-voted-the-best-cruise-destination-in-the-world-heres-why/</a></li>
+        <li>Goldenes Dahl. 1500. <strong>Goldenes Dahl [Image]</strong>. Retrieved from <a href="https://blog.innsbruck.info/featured_stories/national-geographic-unmasking-winter-innsbruck/">https://blog.innsbruck.info/featured_stories/national-geographic-unmasking-winter-innsbruck/</a></li>
+        <li>Cabo Girao. nd. <strong>Cabo Girao [Image]</strong>. Retrieved from <a href="https://www.travelandleisure.com/worlds-best/islands-in-europe">https://www.travelandleisure.com/worlds-best/islands-in-europe</a></li>
+        <li>Norway. nd. <strong>Norwegian Town [Image]</strong>. Retrieved from <a href="https://www.mastersportal.com/articles/1608/how-to-apply-to-an-international-university-in-norway-in-2020.html">https://www.mastersportal.com/articles/1608/how-to-apply-to-an-international-university-in-norway-in-2020.html</a></li>
+        <li>Whitby. nd. <strong>Town of Whitby, UK [Image]</strong>. Retrieved from <a href="https://afisha.md/ro/news/infoporno/cum-este-vazuta-toamna-in-toata-lumea-18-locuri-incredibile">https://afisha.md/ro/news/infoporno/cum-este-vazuta-toamna-in-toata-lumea-18-locuri-incredibile</a></li>
+        <li>Veince. nd. <strong>Canal in Venice [Image]</strong>. Retrieved from <a href="https://www.alpinesparesorts.com/it/lago-di-garda/gite/venezia/">https://www.alpinesparesorts.com/it/lago-di-garda/gite/venezia/</a></li>
+      </ul>
+
+    </section>
+
+  </body>
+</html>

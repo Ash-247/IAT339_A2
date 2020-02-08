@@ -1,0 +1,297 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+
+body {
+  font-family: "Source Sans Pro", Verdana, sans-serif;
+  padding: 2rem;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+label {
+  margin: 10px;
+  display: block;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+  margin:30px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3F6844;
+  border-radius: 14px;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  display:block;
+  color: #FAF1CF;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #5DAA68;
+  color: white;
+}
+
+nav li a:active {
+  color: black;
+}
+
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-stretch: extra-expanded;
+  font-size: 4rem;
+  color: #3F6844;
+  margin: 25px 0 25px 0;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: #5DAA68;
+  font-size: 1.5rem;
+}
+
+h4 {
+  margin: 10px;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+p {
+  margin-top: 0;
+  max-width: 40rem;
+}
+
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.radio_container {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio_button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.radio_container:hover input ~ .radio_button {
+  background-color: #ccc;
+}
+
+.radio_container input:checked ~ .radio_button {
+  background-color: #5DAA68;
+}
+
+.radio_button::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio_container .radio_button::after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+@media (max-width: 1100px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .column_1 {
+      margin-bottom: 20px
+    }
+}
+
+@media (min-width: 1100px) {
+  .listing_container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.listing_container {
+  margin: 10px auto 10px auto;
+}
+
+.listing {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 30%;
+  align-items: center;
+}
+
+.listing_title {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-stretch: extra-expanded;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #3F6844;
+  margin-top: 10px;
+}
+
+.listing_subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #5DAA68;
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.listing_button {
+  text-align: center;
+}
+
+.intext_link {
+  color:#3F6844;
+  text-decoration: none;
+}
+.intext_link:hover {
+  color:#3F6844;
+  text-decoration: underline;
+}
+
+.input_button {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
+  border: solid #3F6844;
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: #3F6844;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.input_button:hover {
+  background-color: #609F6A;
+}
+
+.input_button:active {
+  color: black;
+}
+
+.input_text {
+  font-family: Verdana;
+  border-color: #5DAA68;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.input_text:focus, .input_text:hover {
+  border-radius: 5px;
+  background-color: #FAF1CF;
+}
+
+.hover_img:hover {
+  opacity: 80%;
+  transition: 0.2s ease-out;
+}
+
+.hover_img:active {
+  opacity: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.column_1 {
+  flex: 25%
+}
+
+.column_2 {
+  flex: 50%
+}
+
+.column_3 {
+  margin-top: 50px;
+  flex: 75%
+}
+
+.column_1, .column_2, .column_3 {
+  padding: 0 16px;
+}
+
+.payment_container {
+  display: inline-block;
+  background-color: lightgrey;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid #609F6A;
+  border-radius: 3px;
+}
+
+hr {
+  border: 1px solid #609F6A;
+}
+
+span.cart {
+  float: right;
+  color: black;
+}
