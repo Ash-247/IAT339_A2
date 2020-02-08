@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Open Science Network - Style Guide</h1>
+        <p>The elements below are used to create webpages with branding for the OSN. This guide adapts the Atomic Design System.</p>
+        <nav>        
+          <a href="#interactive_elements">Interactive Elements</a>
+          <a href="#text_elements">Text Elements</a>
+          <a href="#combined_elements">Combined Elements</a>
+          <a href="listing-page.html">Service Listing Template</a>
+          <a href="checkout-page.html">Checkout Template</a>
+          <a href="#citations">Citations</a>
+
+        </nav><br>
+      </header>
+
+
+      <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <section id="interactive_elements">
+        <h2>Interactive Elements</h2>
+
+        <section class="element">
+          <h3 >In-text link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.text-link</p>
+
+          <h4>Sample code:</h4>
+          <h5>HTML</h5>
+          <code>&lt;a href=""&gt;Link&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+            <a href="">Link</a>
+        </section>  
+
+
+        <!-- Default Button styling section -->
+        <section class="element">
+          <h3>Navigation Link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.button-nav</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a href="#" class="button-nav">Default Button</a>
+        </section>
+
+
+        <section class="element">
+          <h3>Submit/Reset Buttons</h3> <!-- https://www.w3schools.com/html/html_forms.asp -->
+          <h4>CSS selector:</h4>
+          <p>.button-submit</p>
+          <p>.button-reset</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;input type="submit"&gt;</code>
+          <code>&lt;input type="reset"&gt;</code>
+
+          <h4>Rendered elements:</h4>
+          <input type="submit">
+          <input type="reset">
+        </section>
+
+
+        <section class="element">
+          <h3>Text Input Field with Label</h3>
+          
+          <h4>CSS selector:</h4>
+          <p>.input-text</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;label&gt;Textbox:&lt;/label&gt; &lt;input type="text" name="textbox"&gt;</code>
+
+          <h4>Rendered element:</h4>
+            <label>Textbox:</label>
+            <input type="text" name="textbox">
+        </section>
+
+
+        <section class="element">
+          <h3>Radio Button with Label</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.input-radio</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;label&gt;Radio Button:&lt;/label&gt; &lt;input type="radio" name="textbox"&gt;</code>
+
+          <h4>Rendered element:</h4>
+            <form>
+              <label>Radio Button:</label>
+              <input type="radio" name="radio">
+          </form> 
+        </section>
+
+      </section>
+
+
+        <section class="element">
+          <h3>Image as a Link</h3>
+       
+          <h4>CSS selector:</h4>
+          <p>.img-link</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;a href="https://www.opensciencenet.org/"&gt;&lt;img src="img/dishes.jpg" alt="petri-dishes" id="img-link"&gt;&lt;/a&gt;
+          </code>
+
+          <h4>Rendered element:</h4> 
+            <a href="" class="img-block">
+              <img src="img/dishes.png" alt="petri-dishes" id="img-link">
+              <h3 class="img-text">Image Link</h3> 
+            </a> 
+          
+        </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+        <h2>Text Elements</h2>
+
+        <section class="element">
+          <h3>Headings</h3>
+          <div id="text">
+            <h4>CSS selector:</h4>
+            <p>.h1</p>
+            <p>.h2</p>
+            <p>.h3</p>
+            <p>.h4</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;h1&gt;Heading&lt;/h1&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <h1>Heading1</h1>
+            <h2>HEADING2</h2>
+            <h3>Heading3</h3>
+            <h4>Heading4</h4>
+          </div>
+        </section>
+
+
+        <section class="element">
+          <h3>Paragraphs</h3>
+              
+          <h4>CSS selector:</h4>
+          <p>.p</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;p&gt;paragraph&lt;/p&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <p>Open Science Network is dedicated to supporting the pursuit of citizen science and democratized research. Our society shares a critical interest in the Science 2.0 movement, which we believe has the potential to work towards a more ethical, open and democratic model of scientific practice. </p>
+        </section>
+
+
+        <section class="element">
+          <h3>Numbered Lists</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.ol</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;ol&gt;&lt;li&gt;list&lt;/li&gt;&lt;/ol&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <ol>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>       
+          </ol>
+        </section>
+
+      </section>
+      <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+      <!-- COMBINED ELEMENTS SECTION // -->
+      <section id="combined_elements">
+        <h2>Combined Elements</h2>
+
+        <section class="element">
+          <h3>Main Navigation</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.nav-main</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;nav class=&quot;nav-main&quot;&gt; <br />
+              &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;img/logo.svg&quot; alt=&quot;logo&quot;&gt;&lt;/a&gt;<br />
+              &lt;div class=&quot;nav-links&quot;&gt;<br />
+                &lt;a href=&quot;&quot;&gt;Home&lt;/a&gt;<br />
+                &lt;a href=&quot;&quot;&gt;Events&lt;/a&gt;<br />
+                &lt;a href=&quot;&quot;&gt;Join&lt;/a&gt;<br />
+                &lt;a href=&quot;&quot;&gt;Donate&lt;/a&gt;<br />
+                &lt;a href=&quot;&quot;&gt;About&lt;/a&gt;<br />
+              &lt;/div&gt;<br />
+            &lt;/nav&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <nav class="nav-main"> 
+            <a href=""><img src="img/logo.svg" alt="logo"></a>        
+            <div class="nav-links">
+              <a href="">Home</a>
+              <a href="">Events</a>
+              <a href="">Join</a>
+              <a href="">Donate</a>
+              <a href="">About</a>
+            </div>
+          </nav>
+        </section>
+
+
+        <section class="element">
+          <h3>Service Listing</h3>
+          
+          <h4>CSS selector:</h4>
+          <p>.membership</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class=&quot;membership&quot;&gt;<br />
+              &lt;img src=&quot;img/dishicon.png&quot; alt=&quot;dishicon&quot;&gt; <br />
+              &lt;h3&gt;Membership Tier&lt;/h3&gt;<br />
+              &lt;h4&gt;Benefits&lt;/h4&gt;<br />
+              &lt;ol&gt;<br />
+                &lt;li&gt;item&lt;/li&gt;<br />
+                &lt;li&gt;item&lt;/li&gt;<br />
+                &lt;li&gt;item&lt;/li&gt;       <br />
+              &lt;/ol&gt;<br />
+              &lt;a href=&quot;&quot;&gt;See Details&lt;/a&gt;<br />
+              &lt;a class=&quot;button-nav&quot; href=&quot;&quot;&gt;Join at $10/m&lt;/a&gt;<br />
+            &lt;/div&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <div class="membership">
+            <img src="img/dishicon.png" alt="dishicon"> 
+            <h3>Membership Tier</h3>
+            <h4>Benefits</h4>
+            <ol>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>       
+            </ol>
+            <a href="">See Details</a>
+            <a class="button-nav" href="">Join at $10/m</a>
+          </div>
+        </section>
+
+
+        <section class="element">
+          <h3>Payment Form</h3>
+          
+          <h4>CSS selector:</h4>
+          <p>.payform</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;div class=&quot;payform&quot;&gt;<br />
+            &lt;label&gt;First Name:&lt;/label&gt; &lt;input type=&quot;text&quot;&gt;<br />
+            &lt;label&gt;Last Name:&lt;/label&gt; &lt;input type=&quot;text&quot;&gt; &lt;br&gt;<br />
+            &lt;label&gt;Email:&lt;/label&gt; &lt;input type=&quot;text&quot;&gt;<br />
+            &lt;label&gt;Phone:&lt;/label&gt; &lt;input type=&quot;text&quot;&gt; &lt;br&gt;<br />
+            &lt;label&gt;Payment:&lt;/label&gt; &lt;input type=&quot;radio&quot;&gt; PayPal &lt;input type=&quot;radio&quot;&gt; MasterCard&lt;input type=&quot;radio&quot;&gt; Visa&lt;br&gt;<br />
+            &lt;label&gt;Zip / Postal Code:&lt;/label&gt; &lt;input type=&quot;text&quot;&gt;<br /><br/>&lt;input type="submit"&gt; &lt;/div&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <div class="payform">
+            <label>First Name:</label> <input type="text">
+            <label>Last Name:</label> <input type="text"> <br>
+            <label>Email:</label> <input type="text"> <br>
+            <label>Phone:</label> <input type="text"> <br>
+            <label>Payment:</label> <input type="radio"> PayPal <input type="radio"> MasterCard <input type="radio"> Visa <br>
+            <label>Zip / Postal Code:</label> <input type="text"> <br>
+            <input type="submit">
+          </div>
+        </section>
+
+
+        <section class="element">
+          <h3>Checkout Cart</h3>
+          
+          <h4>CSS selector:</h4>
+          <p>.checkout</p>
+
+          <h4>Sample code:</h4>
+          <code> &lt;div class=&quot;checkout&quot;&gt;<br />
+              &lt;h2&gt;Sign-up&lt;/h2&gt;<br />
+              &lt;div class=&quot;membership&quot;&gt;<br />
+                &lt;img src=&quot;img/dishicon.png&quot; alt=&quot;dishicon&quot;&gt; <br />
+                &lt;h3&gt;Membership Tier&lt;/h3&gt;<br />
+                &lt;a href=&quot;&quot;&gt;See Details&lt;/a&gt;<br />
+              &lt;/div&gt;<br />
+              &lt;div class=&quot;membership&quot;&gt;<br />
+                &lt;img src=&quot;img/dishicon.png&quot; alt=&quot;dishicon&quot;&gt; <br />
+                &lt;h3&gt;Membership Tier&lt;/h3&gt;<br />
+                &lt;a href=&quot;&quot;&gt;See Details&lt;/a&gt;<br />
+              &lt;/div&gt;&lt;br&gt;<br />
+              &lt;div class=&quot;total&quot;&gt;<br />
+                &lt;p&gt;Membership Tier 1 - $10&lt;/p&gt;<br />
+                &lt;p&gt;Membership Tier 2 - $30&lt;/p&gt;<br />
+                &lt;hr/&gt;<br />
+                &lt;h4&gt;Total: $40/m&lt;/h4&gt;<br />
+              &lt;/div&gt;<br />
+            &lt;/div&gt;
+          </code>
+         
+          <h4>Rendered element:</h4>
+            <div class="checkout">
+              <h2>Sign-up</h2>
+              <div class="membership">
+                <img src="img/dishicon.png" alt="dishicon"> 
+                <h3>Membership Tier</h3>
+                <a href="">See Details</a>
+              </div>
+              <div class="membership">
+                <img src="img/dishicon.png" alt="dishicon"> 
+                <h3>Membership Tier</h3>
+                <a href="">See Details</a>
+              </div><br>
+              <div class="total">
+                <p>Membership Tier 1 - $10</p>
+                <p>Membership Tier 2 - $30</p>
+                <hr/>
+                <h4>Total: $40/m</h4>
+              </div>
+            </div>
+        </section>
+
+      </section>
+      <!-- // COMBINED ELEMENTS SECTION -->
+
+
+      <!-- // BRANDING -->
+      <section class="element">
+        <h2>Brand</h2>
+        <h4>Offering</h4>
+        <p>We provide an open community lab for interdisciplinary and exploration collaboration to share ideas, knowledge, and equipment. We offer the space, workshops, and equipment you need to make your own discoveries!</p>
+        <h4>Our Members</h4>
+        <p>The company is a community-based non-profit that values dicovery and diversity. They invite people from various displines to engage in their workshops and are also an educational outreach group for schools.</p>
+        <h4>Why us?</h4>
+        <p>The company is clear about their community and values in content to bring in people wih shared beliefs. This invloves showcasing projects from the community so that people know what they could do as a member. Their are also different types of offerings in workshops and membership that appeal to different audiences.</p>
+      </section>
+
+      <section class="element">
+        <h2>Brand Components</h2>
+
+        <h4>Fonts</h4>
+        <div id="fonts"><h1>Open Sans</h1><p>Regular and Bold for flexibility and readability</p><br></div>
+        
+        <h4>Colour Palette</h4>
+
+        <div class="block">
+          <div id="osn-blue"></div>
+          <p>Deep Blue<br>#0071BC</p>
+        </div>
+        <div class="block">
+          <div id="osn-lightblue"></div>
+          <p>Light Blue<br>#57C9FB</p>
+        </div>
+        <div class="block">
+          <div id="osn-pink"></div>
+          <p>Luminescent Pink<br>#E60876</p>
+        </div>
+
+        <div class="block">
+          <div id="osn-dgrey"></div>
+          <p>Dark Grey<br>#404040</p>
+        </div>
+
+        <h4>Iconography</h4>
+        <p>Iconography that is friendly, approachable, and relevent to a science lab.</p>
+        <img src="img/icon2.png" alt="sky">
+
+        <h4>Imagery</h4>
+        <p>Community, People, Action.</p>
+        <img src="img/people.jpg" alt="sky">
+
+      </section>   
+      <!-- // BRANDING -->
+
+      <!-- CITATIONS -->
+      <section id="citations" class="element">
+        <h2>Citations</h2>
+        <h4>HTML</h4>
+        <p>This link was used to quickly convert html to "code tag" friendly syntax:</p>
+        <p>plus2net.com team. (2000, February 5). plus2net.com. Retrieved from https://www.plus2net.com/html_tutorial/tags-page.php</p><br>
+        
+        <p>Horizontal line:</p>
+        <p>moettinger (2013, February 11). Re: horizontal line... Retrieved from https://stackoverflow.com/questions/14821087/horizontal-line-and-right-way-to-code-it-in-html-css</p><br>
+        
+        <p>Iconography: https://thenounproject.com/</p><br>
+        
+        <p>People Image: https://www.cbc.ca/radio/quirks/intermittent-fasting-the-math-of-espresso-biological-bricks-and-more-1.5438088/bringing-biology-to-bricks-concrete-details-on-how-to-grow-building-materials-1.5438097</p><br>
+        
+        <h4>CSS</h4>
+        <p>Auto-Uppercase CSS:</p>
+        <p>Love, C. (2018, February 10). Use CSS text-transform to Manipulate Text Casing. Retrieved from https://love2dev.com/blog/css-text-transform/</p><br>
+       
+        <p>Image Text-Overlay:</p>
+        <p>“How to Position Text over an Image Using CSS.” TutorialRepublic, 2020. Retrieved from www.tutorialrepublic.com/faq/how-to-position-text-over-an-image-using-css.php.</p><br>
+        
+        <p>Image overlay:</p>
+        <p>Crozier, J. (2013, Auguest 19). Re: Black transparent overlay...  Retrieved from https://stackoverflow.com/questions/18322548/black-transparent-overlay-on-image-hover-with-only-css</p><br>
+        
+        <p>Input type attribute:</p>
+        <p>“CSS Attribute Selectors.” W3schools, 2020. Retrieved from https://www.w3schools.com/css/css_attribute_selectors.asp</p><br>
+      </section>
+      <!-- // CITATIONS -->
+      
+    </div>
+  </body>
+</html>
+
+
