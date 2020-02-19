@@ -1,0 +1,274 @@
+
+/*  STYLE GUIDE STYLING
+   Styling for the style guide */
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.wrap {
+  margin: auto;
+  width: 50%;
+  padding: 1rem;
+
+
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+section {
+  font-weight: normal;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  font-style: italic;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+ol {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+input {
+  margin: 1.5rem 0rem 0rem 0.75rem;
+}
+
+Input[type="submit"] {
+  padding: 0.5rem;
+}
+
+Input[type="reset"] {
+  padding: 0.5rem;
+}
+
+input:focus {
+  border: 2px solid #0071bc;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  background-color: #E60876;
+  font-weight: 600;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #57C9FB;
+}
+
+
+#img-link {
+  border-radius: 8px;
+  width: 300px;
+  height: auto;
+}
+
+.img-block {
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.img-text {
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  padding: 5.5rem 0;
+  border-radius: 8px;
+  top: 0%;
+  text-align: center;
+  width: 100%;
+  transition-property: background-color;
+  transition-duration: 0.4s;
+}
+
+.img-text:hover {
+  background-color: rgba(0, 0, 75, 0.2);
+}
+
+h3.img-text {
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+#text h1 {
+  font-size: 4em;
+  margin: 0.67em 0;
+}
+
+#text h3 {
+  font-style: normal;
+}
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+/*Nav*/
+.nav-main {
+  position: sticky;
+  top: 0;
+  background-color: #404040;
+  padding: 2rem;
+  text-align: right;
+}
+
+.nav-links a{
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 2rem 1rem;
+}
+
+.nav-links a:hover{
+  background-color: #57C9FB;
+}
+
+.nav-main img{
+  position: absolute;
+  left: 2rem;
+  bottom: 1rem;
+  display: inline-block;
+}
+/**/
+
+.payform {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #0071bc;
+  border-radius: 2px;
+}
+
+/*Membership*/
+.membership {
+  background-color: #0071bc;
+  color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+  display: inline-block;
+  width: 20%;
+}
+
+.membership a{
+  display: block;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.membership h3{
+  font-style: normal;
+}
+/**/
+
+#details a {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.checkout {
+  display: block;
+}
+
+.total {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #E60876;
+  border-radius: 2px;
+}
+
+
+/*  BRAND COMPONENTS -------------------*/
+
+/*COLOUR Squares - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_square*/
+
+.block {
+  display: inline-block;
+  margin: 0 2rem;
+  text-align: center;
+}
+
+#osn-blue {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border-radius: 4px;
+  background-color: #0071bc;
+  /*background-color: #219FD6, 157EAD;*/
+}
+
+#osn-lightblue {
+  height: 100px;
+  width: 100px;
+  border-radius: 4px;
+  background-color: #57C9FB;
+}
+
+#osn-pink {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border-radius: 4px;
+  background-color: #E60876;
+}
+
+#osn-dgrey {
+  height: 100px;
+  width: 100px;
+  border-radius: 4px;
+  background-color: #404040;
+}
+
+
+/*Auto-Uppercase CSS: https://love2dev.com/blog/css-text-transform/*/
+/*Image Text-Overlay: https://www.tutorialrepublic.com/faq/how-to-position-text-over-an-image-using-css.php
+https://stackoverflow.com/questions/18322548/black-transparent-overlay-on-image-hover-with-only-css*/
+/*Input type attribute" https://www.w3schools.com/css/css_attribute_selectors.asp*/
