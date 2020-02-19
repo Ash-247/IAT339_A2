@@ -1,5 +1,5 @@
 
-/*  STYLE GUIDE STYLING
+/*  STYLE GUIDE STYLING 
    Styling for the style guide */
 
 body {
@@ -12,6 +12,8 @@ body {
   margin: auto;
   width: 50%;
   padding: 1rem;
+
+
 }
 
 .element {
@@ -75,7 +77,7 @@ code {
 }
 
 
-/*
+/* 
   INTERACTIVE ELEMENTS -------------------
 */
 .button-nav {
@@ -86,7 +88,7 @@ code {
   background-color: #E60876;
   font-weight: 600;
   text-decoration: none;
-  transition-property: background-color;
+  transition-property: background-color; 
   transition-duration: 0.2s;
 }
 
@@ -114,10 +116,10 @@ code {
   margin: 0 auto;
   padding: 5.5rem 0;
   border-radius: 8px;
-  top: 0%;
+  top: 0%; 
   text-align: center;
   width: 100%;
-  transition-property: background-color;
+  transition-property: background-color; 
   transition-duration: 0.4s;
 }
 
@@ -131,32 +133,43 @@ h3.img-text {
 }
 
 
-/*
+/* 
   TEXT ELEMENTS -------------------
 */
 #text h1 {
   font-size: 4em;
   margin: 0.67em 0;
-}
+} 
 
 #text h3 {
   font-style: normal;
 }
 
-/*
+/* 
   COMBINED ELEMENTS -------------------
 */
 
 /*Nav*/
 .nav-main {
-  position: sticky;
-  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #404040;
-  padding: 2rem;
-  text-align: right;
+  padding: 0 1rem;
+/*  top: 0;*/
+/*  text-align: right;*/
 }
 
-.nav-links a{
+.nav-main img {
+  order: 1;
+}
+
+.nav-links {
+  order: 2;
+}
+
+.nav-links a {
+  display: inline-block;
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
@@ -167,11 +180,19 @@ h3.img-text {
   background-color: #57C9FB;
 }
 
-.nav-main img{
-  position: absolute;
-  left: 2rem;
-  bottom: 1rem;
-  display: inline-block;
+@media (max-width: 1390px) {
+  .nav-main {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-main img {
+    padding-top: 1rem;
+  }
+
+  .nav-links a {
+    padding: 1rem;
+  }
 }
 /**/
 
@@ -192,7 +213,7 @@ h3.img-text {
   margin: 1rem;
   text-align: center;
   display: inline-block;
-  width: 20%;
+/*  width: 20%;*/ 
 }
 
 .membership a{
@@ -211,6 +232,11 @@ h3.img-text {
   text-decoration: underline;
 }
 
+.checkout_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .checkout {
   display: block;
 }
@@ -223,6 +249,12 @@ h3.img-text {
   border-radius: 2px;
 }
 
+@media (min-width: 1100px) {
+  .listing_container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 /*  BRAND COMPONENTS -------------------*/
 
