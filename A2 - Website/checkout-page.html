@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Checkout/title</title>
+    <title>Checkout</title>
     <link href="css/main.css" rel="stylesheet">
     <link href="/css/checkout-style.css" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
@@ -53,7 +53,7 @@
       </div>
 
     </div> -->
-    <h2>Checkout</h2>
+    <h2 class="title">Checkout</h2>
       <div class="row">
         <div class="column-75">
           <div class="checkout-container">
@@ -95,11 +95,17 @@
                   <input type="text" id="cnum" name="cardnumber">
 
                   <label for="expdate">Expiry Date</label>
-                  <input type="text" id="expdate" name="expirydate">
+                  <input type="text" id="expdate" name="expirydate" placeholder="MM/YY">
+
+                  <div class="column-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv">
+                  </div>
                 </div>
-
-
               </div>
+
+              <input type="submit" value="Checkout" class="">
+
             </form>
           </div>
         </div>
