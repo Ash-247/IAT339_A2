@@ -239,7 +239,7 @@
           <h4>Sample code:</h4>
           <code>
             &lt;div class=&quot;membership&quot;&gt;<br />
-              &lt;img src=&quot;img/dishicon.png&quot; alt=&quot;dishicon&quot;&gt; <br />
+              &lt;img src=&quot;img/dishicon.svg&quot; alt=&quot;dishicon&quot;&gt; <br />
               &lt;h3&gt;Membership Tier&lt;/h3&gt;<br />
               &lt;h4&gt;Benefits&lt;/h4&gt;<br />
               &lt;ol&gt;<br />
@@ -253,17 +253,31 @@
           </code>
 
           <h4>Rendered element:</h4>
-          <div class="membership">
-            <img src="img/dishicon.png" alt="dishicon"> 
-            <h3>Membership Tier</h3>
-            <h4>Benefits</h4>
-            <ol>
-              <li>item</li>
-              <li>item</li>
-              <li>item</li>       
-            </ol>
-            <a href="">See Details</a>
-            <a class="button-nav" href="">Join at $10/m</a>
+          <div class= listing_container>
+            <div class="membership">
+              <img src="img/dishicon.svg" alt="dishicon"> 
+              <h3>Membership Tier</h3>
+              <h4>Benefits</h4>
+              <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>       
+              </ol>
+              <a href="">See Details</a>
+              <a class="button-nav" href="">Join at $10/m</a>
+            </div>
+            <div class="membership">
+              <img src="img/dishicon.svg" alt="dishicon"> 
+              <h3>Membership Tier</h3>
+              <h4>Benefits</h4>
+              <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>       
+              </ol>
+              <a href="">See Details</a>
+              <a class="button-nav" href="">Join at $10/m</a>
+            </div>
           </div>
         </section>
 
@@ -306,12 +320,12 @@
           <code> &lt;div class=&quot;checkout&quot;&gt;<br />
               &lt;h2&gt;Sign-up&lt;/h2&gt;<br />
               &lt;div class=&quot;membership&quot;&gt;<br />
-                &lt;img src=&quot;img/dishicon.png&quot; alt=&quot;dishicon&quot;&gt; <br />
+                &lt;img src=&quot;img/dishicon.svg&quot; alt=&quot;dishicon&quot;&gt; <br />
                 &lt;h3&gt;Membership Tier&lt;/h3&gt;<br />
                 &lt;a href=&quot;&quot;&gt;See Details&lt;/a&gt;<br />
               &lt;/div&gt;<br />
               &lt;div class=&quot;membership&quot;&gt;<br />
-                &lt;img src=&quot;img/dishicon.png&quot; alt=&quot;dishicon&quot;&gt; <br />
+                &lt;img src=&quot;img/dishicon.svg&quot; alt=&quot;dishicon&quot;&gt; <br />
                 &lt;h3&gt;Membership Tier&lt;/h3&gt;<br />
                 &lt;a href=&quot;&quot;&gt;See Details&lt;/a&gt;<br />
               &lt;/div&gt;&lt;br&gt;<br />
@@ -325,23 +339,27 @@
           </code>
          
           <h4>Rendered element:</h4>
-            <div class="checkout">
-              <h2>Sign-up</h2>
-              <div class="membership">
-                <img src="img/dishicon.png" alt="dishicon"> 
-                <h3>Membership Tier</h3>
-                <a href="">See Details</a>
-              </div>
-              <div class="membership">
-                <img src="img/dishicon.png" alt="dishicon"> 
-                <h3>Membership Tier</h3>
-                <a href="">See Details</a>
-              </div><br>
-              <div class="total">
-                <p>Membership Tier 1 - $10</p>
-                <p>Membership Tier 2 - $30</p>
-                <hr/>
-                <h4>Total: $40/m</h4>
+            <div class= checkout_container>
+              <div class="checkout">
+                <h2>Sign-up</h2>
+                <div class= listing_container>
+                  <div class="membership">
+                    <img src="img/dishicon.svg" alt="dishicon"> 
+                    <h3>Membership Tier</h3>
+                    <a href="">See Details</a>
+                  </div>
+                  <div class="membership">
+                    <img src="img/dishicon.svg" alt="dishicon"> 
+                    <h3>Membership Tier</h3>
+                    <a href="">See Details</a>
+                  </div><br>
+                 </div>
+                <div class="total">
+                  <p>Membership Tier 1 - $10</p>
+                  <p>Membership Tier 2 - $30</p>
+                  <hr/>
+                  <h4>Total: $40/m</h4>
+                </div>
               </div>
             </div>
         </section>
