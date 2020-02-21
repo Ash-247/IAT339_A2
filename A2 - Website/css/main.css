@@ -12,8 +12,6 @@ body {
   margin: auto;
   width: 50%;
   padding: 1rem;
-
-
 }
 
 .element {
@@ -83,6 +81,11 @@ code {
   background-color: #EEE;
   padding: 0.5rem;
   display: block;
+}
+
+hr {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 
@@ -220,6 +223,7 @@ h3.img-text {
   border-radius: 8px;
   padding: 2rem;
   margin: 1rem;
+  justify-content: center;
   text-align: center;
   display: inline-block;
 /*  width: 20%;*/
@@ -264,6 +268,44 @@ h3.img-text {
     justify-content: space-between;
   }
 }
+
+/*  Listing Page -------------------*/
+
+.details-container {
+  margin: 2% 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.details-content {
+  -webkit-flex: 1 1 18em;
+	-ms-flex: 1 1 18em;
+	flex: 1 1 25em;
+  text-align: left;
+  margin-bottom: 20px;
+	padding: 0 1rem;
+}
+
+.details-image {
+  height: auto;
+  width: 100%;
+  -webkit-flex: 3 1 400px;
+  -ms-flex: 3 1 400px;
+  flex: 1 1 400px;
+}
+
+@media (max-width: 700px) {
+  .details-container {
+    justify-content: center;
+    margin: 7% 10%;
+  }
+  .details-image {
+    height: auto;
+    width: 100%;
+  }
+}
+
 
 /*  BRAND COMPONENTS -------------------*/
 
