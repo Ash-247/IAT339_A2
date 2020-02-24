@@ -35,7 +35,7 @@ h1 {
 
 h2 {
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   color: #0071bc;
 }
 
@@ -152,10 +152,6 @@ h3.img-text {
 #text h1 {
   font-size: 4em;
   margin: 0.67em 0;
-}
-
-#guide-h2 {
-  color: black;
 }
 
 #text h3 {
@@ -293,8 +289,6 @@ h3.img-text {
 }
 
 .details-image {
-  height: auto;
-  width: 100%;
   -webkit-flex: 3 1 400px;
   -ms-flex: 3 1 400px;
   flex: 1 1 400px;
