@@ -35,7 +35,8 @@ h1 {
 
 h2 {
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  color: #0071bc;
 }
 
 h3 {
@@ -151,6 +152,10 @@ h3.img-text {
 #text h1 {
   font-size: 4em;
   margin: 0.67em 0;
+}
+
+#guide-h2 {
+  color: black;
 }
 
 #text h3 {
