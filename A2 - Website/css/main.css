@@ -107,7 +107,6 @@ textarea {
   resize: none;
 }
 
-
 /*
   INTERACTIVE ELEMENTS -------------------
 */
@@ -224,6 +223,68 @@ h1 {
   background-color: #57C9FB;
 }
 
+/*--------Footer--------*/
+.footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  background-color: #404040;
+  /* padding: 60px 10px; */
+}
+
+@media (max-width: 700px) {
+  .footer-container{
+    text-align: center;
+    flex-direction: column;
+  }
+  .footer-item {
+    justify-content: center;
+    padding: 10px 0px;
+  }
+}
+
+.footer-item {
+  display: block;
+  margin: 0 50px;
+  height: 100%;
+}
+
+@media (min-width: 700px) {
+  .footer-item {
+    padding: 30px 0px;
+  }
+}
+
+.footer-item h1 {
+  text-align: left;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  color: white;
+}
+
+.footer-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-item p {
+  font-size: 14px;
+  text-align: left;
+  color: white;
+  max-width: 200px;
+}
+
+.footer-img {
+  /* width: 80%; */
+  height: 100%;
+  display: block;
+}
+
+
+/*--------------------*/
+
+
 @media (max-width: 1390px) {
   .nav-main {
     display: block;
@@ -257,6 +318,9 @@ h1 {
     border-radius: 2px;
   }
 }
+
+/* footer */
+
 
 /*Membership*/
 .membership {
