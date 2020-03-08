@@ -57,6 +57,12 @@ ol {
   margin: 0;
 }
 
+li {
+  padding-bottom: 10px;
+  list-style-type: none;
+  max-width: 200px;
+}
+
 label {
   margin-left: 1rem;
   font-weight: 600;
@@ -68,13 +74,14 @@ input {
   margin: 1.5rem 0rem 0rem 0.75rem;
 }
 
-Input[type="submit"] {
+input[type="submit"] {
   padding: 1rem;
   cursor: pointer;
-  margin: 20px;
+  /* margin: 20px; */
+  border: none;
 }
 
-Input[type="reset"] {
+input[type="reset"] {
   padding: 0.5rem;
 }
 
@@ -91,6 +98,13 @@ code {
 hr {
   margin-left: 5%;
   margin-right: 5%;
+}
+
+textarea {
+  overflow: auto;
+  max-width: 700px;
+  margin-left: 20px;
+  resize: none;
 }
 
 
@@ -225,13 +239,23 @@ h1 {
   }
 }
 /**/
+@media (min-width: 800px) {
+  .payform {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #0071bc;
+    border-radius: 2px;
+  }
+}
 
-.payform {
-  display: block;
-  margin: 1rem;
-  padding: 1rem;
-  border: 2px solid #0071bc;
-  border-radius: 2px;
+@media (max-width: 800px) {
+  .payform {
+    display: block;
+    padding: 1rem;
+    border: 2px solid #0071bc;
+    border-radius: 2px;
+  }
 }
 
 /*Membership*/
@@ -245,6 +269,7 @@ h1 {
   text-align: center;
   display: inline-block;
 /*  width: 20%;*/
+
 }
 
 .membership a{
