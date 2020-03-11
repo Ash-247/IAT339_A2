@@ -3,17 +3,21 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Science Network</title>
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">   
   </head>
 
   <body>
-    <header class="page">
+    <header>
       <nav class="nav-main">
-        <a href="about.html"><img src="img/logo.svg" alt="logo"></a>
-        <div class="nav-links">
+        <a href="about.html" class="logo"><img src="img/logo.svg" alt="logo"></a>
+        <div class="nav-links" id="navMain">
+          <a href="javascript:void(0);" class="menu" onclick="myFunction()">
+            <p>MENU</p>
+          </a> 
           <a href="about.html">Home</a>
           <a href="events.html">Events</a>
           <a href="listing-page.html">Join</a>
@@ -21,14 +25,16 @@
           <a href="citations.html">Citations</a>
         </div>
       </nav>
-      <!-- cover image -->
+      <!-- hero/cover image -->
+      <div class="hero">
         <img src="img/dishes.svg" alt="petri-dishes" id="cover">
-        <h1 class="img-text-cover" id="hero-h">Open Science Network</h1>
+        <h1 class="img-text-cover" id="hero-h">Vancouver's Community Biolab</h1>
+      </div>
 <!--         <h3 class="img-text-cover">A community of scientists, artists, tinkerers and makers.</h3>
  -->    </header>
 
     <div class="wrap">
-      <h1>Who are we?</h1>
+      <!-- <h1>Who are we?</h1> -->
       <h2>Our Mission</h2>
       <p>Open Science Network Society is a British Columbia incorporated nonprofit society dedicated to promoting open citizen science through providing a community-supported biology laboratory that is safe, accessible, inclusive, affordable, and open to members. By sharing equipment we reduce the barriers to science permitting citizen scientists, hobbyists, artists, students and entrepreneurs to work on personal projects, collaborate with others, and learn new skills. OSN also focuses some of its resources on promoting science education to youth and adults in British Columbia.</p><br>
       <h2>We are Membership Supported</h2>
@@ -64,4 +70,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/nav.js"></script>
+
   </body>
+</html>

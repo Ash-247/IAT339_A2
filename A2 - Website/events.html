@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/checkout-style.css" rel="stylesheet" >
@@ -13,10 +14,13 @@
   <body>
     <header class="page">
       <nav class="nav-main">
-        <a href="about.html"><img src="img/logo.svg" alt="logo"></a>
-        <div class="nav-links">
+        <a href="about.html" class="logo"><img src="img/logo.svg" alt="logo"></a>
+        <div class="nav-links" id="navMain">
+          <a href="javascript:void(0);" class="menu" onclick="myFunction()">
+            <p>MENU</p>
+          </a> 
           <a href="about.html">Home</a>
-          <a href="">Events</a>
+          <a href="events.html">Events</a>
           <a href="listing-page.html">Join</a>
           <a href="contact.html">Contact</a>
           <a href="citations.html">Citations</a>
@@ -80,5 +84,8 @@
         </div>
       </div>
     </footer>
+    
+    <script src="js/nav.js"></script>
 
   </body>
+  </html>

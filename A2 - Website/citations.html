@@ -13,8 +13,11 @@
   <body>
     <header class="page">
       <nav class="nav-main">
-        <a href="about.html"><img src="img/logo.svg" alt="logo"></a>
-        <div class="nav-links">
+        <a href="about.html" class="logo"><img src="img/logo.svg" alt="logo"></a>
+        <div class="nav-links" id="navMain">
+          <a href="javascript:void(0);" class="menu" onclick="myFunction()">
+            <p>MENU</p>
+          </a> 
           <a href="about.html">Home</a>
           <a href="events.html">Events</a>
           <a href="listing-page.html">Join</a>
@@ -32,6 +35,8 @@
         <p>(n.d.).Petri Dishes Retrieved from https://www.opensciencenet.org/about/workshop-gallery/</p>
         <br>
         <p>Scientists Create Living Concrete! (2020). Retrieved from https://www.nytimes.com/2020/01/15/science/construction-concrete-bacteria-photosynthesis.html</p>
+
+reference for top nav responsiveness: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 
       </div>
 
@@ -62,4 +67,8 @@
           </div>
         </div>
       </footer>
+
+      <script src="js/nav.js"></script>
+
   </body>
+</html>
