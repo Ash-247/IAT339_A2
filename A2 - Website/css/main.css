@@ -365,6 +365,11 @@ h3.text {
   color: white;
 }
 
+.footer-item a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
 .footer-item p {
   font-size: 14px;
   text-align: left;
