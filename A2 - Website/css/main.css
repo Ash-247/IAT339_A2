@@ -369,7 +369,7 @@ h1 {
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   -ms-flex-wrap: wrap;
-  -webkit-flex-wrap;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -405,7 +405,7 @@ h1 {
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   -ms-flex-wrap: wrap;
-  -webkit-flex-wrap;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 4rem 0;
