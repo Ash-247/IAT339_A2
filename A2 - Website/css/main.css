@@ -241,7 +241,7 @@ h3.text {
     float: none;
     display: block;
     padding: 0.5rem;
-    background-color: #333333; 
+    background-color: #333333;
   }
 
   .nav-links.responsive {position: relative;}
@@ -257,7 +257,24 @@ h3.text {
     text-align: center;
   }
 }
-/**/
+/*Ciations*/
+.wrap-citations {
+  margin: auto;
+  width: 80%;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 765px) {
+  .wrap-citations {
+    margin: 10px;
+
+  }
+  .wrap-ciations p{
+    padding: 5px;
+    max-width: 80%;
+    overflow: auto;
+  }
+}
 
 /*FOOTER*/
 .footer-container{
