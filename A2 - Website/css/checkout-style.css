@@ -2,52 +2,6 @@
   box-sizing: border-box;
 }
 
-@media (min-width: 800px) {
-  .input-text {
-    border: 1px solid;
-    border-radius: 2px;
-    padding: 5px;
-    width: 75%;
-    margin-top: 10px;
-  }
-
-}
-
-@media (max-width: 800px) {
-  .input-text {
-    border: 1px solid;
-    border-radius: 2px;
-    padding: 5px;
-    margin-top: 10px;
-  }
-  .row {
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 800px) {
-  .input-textarea {
-    border: 1px solid;
-    border-radius: 2px;
-    padding: 5px;
-    width: 75%;
-    margin-top: 10px;
-  }
-
-}
-
-@media (max-width: 800px) {
-  .input-textarea {
-    border: 1px solid;
-    border-radius: 2px;
-    padding: 5px;
-    width: 75%;
-    margin-top: 10px;
-  }
-}
-
 .input-text-small {
   border: 1px solid;
   border-radius: 2px;
@@ -83,7 +37,7 @@
 }
 
 .column-25, .column-50, .column-75 {
-  padding: 0 16px;
+  padding: 1rem
 }
 
 .checkout-container {
@@ -91,11 +45,4 @@
   padding: 3px 18px 13px 18px;
   border: 2px solid #0071bc;
   border-radius: 2px;
-}
-
-input [type=text] {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid red;
-  border-radius: 3px;
 }

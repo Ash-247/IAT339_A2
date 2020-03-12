@@ -37,6 +37,7 @@ section {
 h1 {
   font-size: 2rem;
   margin: 0.67em 0;
+  padding: 1.5rem;
   text-align: center;
 }
 
@@ -73,6 +74,52 @@ input {
   margin: 1.5rem 0rem 0rem 0.75rem;
 }
 
+input [type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid red;
+  border-radius: 3px;
+}
+@media (min-width: 980px) {
+  .input-text {
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 980px) {
+  .input-text {
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  .row {
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+@media (min-width: 980px) {
+  .input-textarea {
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 10px;
+    max-width: 50%;
+  }
+}
+@media (max-width: 980px) {
+  .input-textarea {
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 10px;
+    max-width: 75%;
+  }
+}
+
 input[type="submit"] {
   padding: 1rem;
   cursor: pointer;
@@ -94,15 +141,9 @@ code {
   display: block;
 }
 
-hr {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
 textarea {
   overflow: auto;
-  max-width: 700px;
-  margin-left: 20px;
+  margin-left: 1rem;
   resize: none;
 }
 
@@ -206,7 +247,6 @@ h3.text {
 
 .nav-main .logo {
   order: 0;
- /* padding: 1rem;*/
 }
 
 .nav-links {
@@ -224,7 +264,7 @@ h3.text {
 .nav-links a:hover {
   background-color: #57C9FB;
 }
-/**/
+
 @media screen and (max-width: 768px) {
   .nav-main {
     display: block;
@@ -235,7 +275,6 @@ h3.text {
     display: block;
     padding: 1rem 1rem 0.5rem 2rem;
   }
-
   .nav-links a {display: none;}
   .nav-links a.menu {
     float: none;
@@ -243,7 +282,6 @@ h3.text {
     padding: 0.5rem;
     background-color: #333333;
   }
-
   .nav-links.responsive {position: relative;}
   .nav-links.responsive a.menu {
     position: relative;
@@ -257,13 +295,13 @@ h3.text {
     text-align: center;
   }
 }
-/*Ciations*/
+
+/*CITATIONS*/
 .wrap-citations {
   margin: auto;
   width: 80%;
   padding: 2rem;
 }
-
 @media screen and (max-width: 765px) {
   .wrap-citations {
     margin: 10px;
@@ -286,10 +324,10 @@ h3.text {
   flex-wrap: wrap;
   justify-content: center;
   background-color: #404040;
-  /* padding: 60px 10px; */
+  margin-top: 1rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 980px) {
   .footer-container{
     text-align: center;
     -ms-flex-direction: column;
@@ -308,7 +346,7 @@ h3.text {
   height: 100%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 980px) {
   .footer-item {
     padding: 30px 0px;
   }
@@ -316,6 +354,7 @@ h3.text {
 
 .footer-item h1 {
   text-align: left;
+  padding: 0rem;
   font-family: 'Open Sans';
   font-size: 18px;
   color: white;
@@ -334,9 +373,9 @@ h3.text {
 }
 
 .footer-img {
-  /* width: 80%; */
   height: 100%;
   display: block;
+  text-align: left;
 }
 
 
@@ -346,7 +385,7 @@ h3.text {
 
 /**/
 @media (min-width: 800px) {
-  .payform {
+  .form {
     display: block;
     margin-bottom: 4rem;
     padding: 1rem;
@@ -356,7 +395,7 @@ h3.text {
 }
 
 @media (max-width: 800px) {
-  .payform {
+  .form {
     display: block;
     padding: 1rem;
     margin-bottom: 4rem;
@@ -371,7 +410,7 @@ h3.text {
 .listing_container {
   display: flex;
   justify-content: center;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 
 .membership {
@@ -449,7 +488,8 @@ h3.text {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 4rem 0;
+  align-items: center;
+  margin: 2rem 0;
 }
 
 .details-content {
@@ -534,26 +574,15 @@ h3.text {
   text-align: center;
   color: white;
 }
-/*https://www.w3schools.com/howto/howto_css_image_text.asp*/
 
 #cover {
-/*https://stackoverflow.com/questions/6169666/how-to-resize-an-image-to-fit-in-the-browser-window*/
   width: 100%;
   max-height: 70vh;
   margin: 0 0 1rem auto;
-  /*https://www.educative.io/edpresso/how-to-crop-an-image-in-css*/
   object-fit: cover;
 }
 
 .img-text-cover {
-/*  position: absolute;
-  color: white;
-  margin: 0 auto;
-  padding: 30.5vh 0;
-  top: 9%;
-  text-align: center;
-  width: 100%;*/
-
   position: absolute;
   top: 40%;
   left: 50%;
