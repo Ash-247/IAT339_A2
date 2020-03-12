@@ -187,6 +187,10 @@ h3.text {
 
 /*NAV*/
 .nav-main {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -257,6 +261,10 @@ h3.text {
 
 /*FOOTER*/
 .footer-container{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -267,6 +275,8 @@ h3.text {
 @media (max-width: 700px) {
   .footer-container{
     text-align: center;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
   }
   .footer-item {
@@ -380,7 +390,13 @@ h3.text {
 }
 
 .checkout_container {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap;
   flex-wrap: wrap;
 }
 
@@ -407,7 +423,13 @@ h3.text {
 /*  Listing Page -------------------*/
 
 .details-container {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 4rem 0;

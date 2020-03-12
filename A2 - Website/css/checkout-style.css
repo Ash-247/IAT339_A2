@@ -21,6 +21,8 @@
     margin-top: 10px;
   }
   .row {
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
   }
 }
@@ -55,7 +57,13 @@
 }
 
 .row {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap;
   flex-wrap: wrap;
 }
 
